@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Update Username</title>
+	<link href="/login.css" rel="stylesheet">
+</head>
+<body>
+	<div class="login-page">
+		<div class="form">
+			<form class="login-form" method="POST" action="/update_name1">
+				<p>Enter your new username</p>
+				<input type="text" placeholder="username" name="update_username" />
+				<button type="submit">Update</button>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$('.message a').click(function(){
+			$('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+		});
+	</script>
+</body>
+</html>

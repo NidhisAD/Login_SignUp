@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link href="/login.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+	<div class="login-page">
+		<div class="form">
+			<p class="success">Successfully logged in!!</p>
+			<p>Your username is <%= name %></p>
+			<button><a href="update_name.html">Update</a></button>
+			<p>Your password is <%= pass %></p>
+			<button><a href="update_pass.html">Update</a></button>
+			<br>
+			<button><a href="login.html">Logout</a></button>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$('.message a').click(function(){
+			$('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+		});
+	</script>
+</body>
+</html>
